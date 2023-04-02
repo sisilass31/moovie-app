@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+body {
+    background-color: #252525;
+}
+
+a {
+    color: white;
+    cursor: pointer;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+    font-family: Montserrat;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 12px 22px;
+    background-color: #141414;
+    gap: 50px;
+    transition: 0.8s;
+}
+
+.navbar img {
+    width: 35px;
+}
+
+.navbar h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.navlink ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.navlink ul li {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.menu {
+    display: none;
+}
+
+/* .navlink a:hover{
+} */
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .search:hover form input {
+    width: 200px;
+} */
+
+.search form input {
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border: none;
+    width: 200px;
+    outline: none;
+    transition: 0.8s;
+}
+
+.search_icon {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.search {
+    /* background-color: linear (-50deg, #da4e69, #e16955, #eb9b35, #f1b527, #fae009); */
+    /* background: linear-gradient(-50deg, #da4e69 10%, #e16955 30%, #eb9b35 50%, #f1b527 80%, #fae009 100%); */
+    background-color: #252525;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.search i {
+    cursor: pointer;
+}
+
+.navlink i {
+    display: none;
+}
+
+.fa-bars {
+    font-size: 20px;
+}
+
+
+/* navbar */
+
+/* cards */
+#container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 24px;
+    margin-top: 30px;
+}
+
+.movie {
+    background-color: #141414;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.8s;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 0.5px #000000;
+}
+
+.movie:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+    box-shadow: 0px 0px 15px 3px #000000;
+}
+
+.card {
+    color: #fff;
+    font-weight: 300;
+    max-width: 300px;
+}
+
+.card img {
+    width: 100%;
+}
+
+
+.card .title {
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 5px;
+}
+
+.div_img {
+    width: 100%;
+    height: 450px;
+}
+
+.div_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.description span {
+    font-weight: 400;
+    display: flex;
+    gap: 7px;
+    background-color: #252525;
+    padding: 6px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.n-t-s-c {
+    display: flex;
+    gap: 15px;
+}
+
+#desc {
+    padding: 25px;
+    font-weight: 400;
+    border-radius: 5px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.8s;
+}
+
+#desc:hover{
+    display: flex;
+    transition: 0.8s;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button button {
+    background-color: #252525;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    padding: 8px 18px;
+    font-size: 16px;
+}
+
+.button button:hover {
+    background: linear-gradient(0deg,#8c0c00, #ff2714);
+    cursor: pointer;
+}
+
+.description span i {
+    font-size: 14px;
+}
+
+.overview {
+    max-height: 128px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+span.red {
+    color: #ff2714;
+}
+
+span.orange {
+    color: #fd893c;
+}
+
+span.green {
+    color: #0dbe00;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.more button {
+    background-color: transparent;
+    border: none;
+}
+
+.more span {
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.more span:hover {
+    background-color: #2c2c2c;
+    border-radius: 15px;
+}
+/* cards */
+
+/* responsive card */
+/* @media (max-width: 600px) {
+   
+} */
+/* responsive card */
+
+
+
+@media(max-width: 1028px) {
+    .card {
+        max-width: 400px;
+    }
+
+    .movie {
+        width: 400px;
+    }
+
+    .div_img {
+        height: 520px;
+    }
+
+    .navlink {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .navbar {
+        padding: 10px 25px;
+        justify-content: space-between;
+        gap: 25px;
+        width: 90%;
+    }
+
+    .search form input {
+        width: 90%;
+    }
+
+    .navbar img {
+        width: 30px;
+    }
+
+    #container {
+        margin-top: 5px;
+    }
+}
